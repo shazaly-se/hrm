@@ -380,6 +380,7 @@ class EmployeesController extends Controller
             }
               if($request->input('certification_copy'))
               {
+                  
                 unlink(storage_path('app/public/'.$request->input('savedcertification_copy')));
         
                 $base64_image = $request->input('certification_copy'); // your base64 encoded     

@@ -162,6 +162,9 @@ Route::post('attend-report', "API\AttendManagementController@report");
 
 //Forgot Password Routes
 Route::post('password/forgot-password','API\ForgotPasswordController@sendResetLinkResponse')->name('passwords.sent');
+
+Route::post('app-forgot-password','API\AppForgotPasswordController@sendResetMsgResponse');
+
 // Route::get('password/reset/{token}', 'API\ResetPasswordController@ResetResponse')->name('passwords.reset');
 Route::post('password/reset', 'API\ResetPasswordController@sendResetResponse')->name('passwords.reset');
 
